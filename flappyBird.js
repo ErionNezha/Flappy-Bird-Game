@@ -32,6 +32,14 @@ var scor = new Audio();
 fly.src = "sounds/fly.mp3";
 scor.src = "sounds/score.mp3";
 
+// play() kthen premtim: deshtimi (p.sh. para prekjes se pare) kapet ne heshtje
+function safePlay(a){
+  try {
+    var p = a.play();
+    if(p && p.catch) p.catch(function(){});
+  } catch(e) {}
+}
+
 // on key down
 document.addEventListener("keydown", moveUp);
 
@@ -46,7 +54,7 @@ function moveUp() {
   if(gameOver) return;
   bY -= 25;
 
-  try { fly.play(); } catch(e) {}
+  safePlay(fly);
 }
 
 // pipe coordinates
@@ -118,12 +126,11 @@ function draw() {
       bY + bird.height >= cvs.height - fg.height)
     ) {
       showGameOver();
-      try { scor.play(); } catch(e) {}
     }
 
     if (pipe[i].x == 5 && !gameOver) {
       score++;
-      try { scor.play(); } catch(e) {}
+      safePlay(scor);
     }
   }
 
