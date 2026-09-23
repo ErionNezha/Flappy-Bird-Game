@@ -1,5 +1,7 @@
 # Flappy Bird 🐤
 
+Created by **Erion Nezha**
+
 Një lojë klasike Flappy Bird në HTML5/JavaScript, e përshtatur në gjuhën shqipe.
 
 ![Screenshot](screenshot.png)
@@ -38,11 +40,13 @@ sounds/         → tingujt (fluturim, pikë)
 
 ## Licenca
 
-MIT — shiko [LICENSE](LICENSE).
+Të gjitha të drejtat e rezervuara © 2026 Erion Nezha — shiko [LICENSE](LICENSE).
 
 ---
 
 # Flappy Bird 🐤
+
+Created by **Erion Nezha**
 
 A classic Flappy Bird game in HTML5/JavaScript, localized in Albanian.
 
@@ -70,4 +74,4 @@ Fly between the pipes and collect as many points as possible! The game uses the 
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+All rights reserved © 2026 Erion Nezha — see [LICENSE](LICENSE).
